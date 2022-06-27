@@ -37,10 +37,7 @@ header {
   margin: 5px auto;
   padding: 3px;
   border-radius: 20px 10px 20px 10px ;
-  -webkit-border-radius: 20px 10px 20px 10px ;
-  -moz-border-radius: 20px 10px 20px 10px ;
-  -ms-border-radius: 20px 10px 20px 10px ;
-  -o-border-radius: 20px 10px 20px 10px ;
+
 }	
 
 /* menu style */
@@ -54,10 +51,7 @@ header {
   height:45px;
   margin:0 auto;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+
 }
 
 .menu ul,.menu li {
@@ -100,8 +94,31 @@ header {
 	padding:0 14px;
 	}
 
+.menu ul li .dropdown {
+  display: none;
+}
+
+.menu ul li:hover .dropdown {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.menu ul li:hover .dropdown li {
+  display: block;
+}
+
+
 .menu li a:hover {
+  display: block;
 	color: blue;
+  justify-content: space-between;
 	background-color: #F7DC6F;
 	font-family: 'Fascinate', sans-serif;
 	text-transform: capitalize;
@@ -434,7 +451,7 @@ input[type="checkbox"]:checked ~ .menu li {
   display: flex;
   justify-content: space-between;
   width: 100px;
-  height: 200px;
+  height: 150px;
   padding: 0px;
   margin: 0px;
 }
@@ -444,7 +461,7 @@ input[type="checkbox"]:checked ~ .menu li {
   display: flex;
   justify-content: space-between;
   width: 100px;
-  height: 200px;
+  height: 100px;
   padding: 10px;
   margin: 50px;
   right: 450px;
@@ -492,8 +509,6 @@ input[type="checkbox"]:checked ~ .menu li {
   justify-items: center;
   align-items: center;
   text-align: center;
-  align-content: center;
-  align-content: center;
   background-color: dodgerblue ;
   width: 80%;
   height: 50px;
@@ -502,10 +517,19 @@ input[type="checkbox"]:checked ~ .menu li {
   bottom: 0px;
   left: 125px;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+
+.footer h4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  left: 100px;
+  
 }
 
 .footer footer {
@@ -514,4 +538,5 @@ input[type="checkbox"]:checked ~ .menu li {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  align-content: center;
 }
